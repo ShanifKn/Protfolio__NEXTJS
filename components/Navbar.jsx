@@ -1,6 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { BsFillPersonFill } from "react-icons/bs";
 
 export const Navbar = () => {
   return (
@@ -8,9 +11,90 @@ export const Navbar = () => {
       <div className="flex justify-between items-center w-full px-2 2xl:px-16">
         <Image src="/../public/assets/sh.png" alt="/" width="80" height="50" />
         <div>
-          <Link href="/">
-            <li></li>
-          </Link>
+          <ul className="hidden md:flex">
+            <Link href="/">
+              <li className="ml-10 text-sm uppercase hover:border-b ">Home</li>
+            </Link>
+            <Link href="/">
+              <li className="ml-10 text-sm uppercase hover:border-b ">About</li>
+            </Link>
+            <Link href="/">
+              <li className="ml-10 text-sm uppercase hover:border-b ">
+                Skills
+              </li>
+            </Link>
+            <Link href="/">
+              <li className="ml-10 text-sm uppercase hover:border-b ">
+                Project
+              </li>
+            </Link>
+            <Link href="/">
+              <li className="ml-10 text-sm uppercase hover:border-b ">
+                Contact
+              </li>
+            </Link>
+          </ul>
+          <div className="md:hidden">
+            <AiOutlineMenu size={25} />
+          </div>
+        </div>
+      </div>
+      <div className="fixed left-0 top-0 w-full h-screen bg-black/70">
+        <div className="fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#dbdddf] p-10 ease-in duration-500">
+          <div>
+            <div className="flex w-full items-center justify-between">
+              <Image
+                src="/../public/assets/sh.png"
+                alt="/"
+                height="25"
+                width="60"
+              />
+              <div className="rounded-full shadow-lg shadow-gray-600 p-2 cursor-pointer">
+                <AiOutlineClose size={25} />
+              </div>
+            </div>
+            <div className="border-b border-gray-400 my-5">
+              <p className="w-[85%] md:w-[90%] py-4">Lets build som</p>
+            </div>
+          </div>
+          <div className="py-1 flex flex-col">
+            <ul className="uppercase">
+              <Link href="/">
+                <li className="py-4 text-sm">Home</li>
+              </Link>
+              <Link href="/">
+                <li className="py-4 text-sm">About</li>
+              </Link>
+              <Link href="/">
+                <li className="py-4 text-sm">Skills</li>
+              </Link>
+              <Link href="/">
+                <li className="py-4 text-sm">Project</li>
+              </Link>
+              <Link href="/">
+                <li className="py-4 text-sm">Contact</li>
+              </Link>
+            </ul>
+            <div className="pt-40">
+              <p className="uppercase tracking-widest text-#5651e5">
+                Lets Connect
+              </p>
+              <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-75">
+                  <FaLinkedinIn />
+                </div>
+                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-75">
+                  <FaGithub />
+                </div>
+                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-75">
+                  <AiOutlineMail />
+                </div>
+                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-75">
+                  <BsFillPersonFill />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
