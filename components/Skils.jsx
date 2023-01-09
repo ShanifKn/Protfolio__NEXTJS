@@ -154,7 +154,7 @@ export const Skils = () => {
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>HTML</h3>
+                <h3>HTML and css</h3>
               </div>
             </div>
           </div>
