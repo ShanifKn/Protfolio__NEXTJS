@@ -4,7 +4,7 @@ import React from "react";
 export const Skils = () => {
   return (
     <div className="w-full lg:h-screen">
-      <div className="max-[1240px] mx-auto flex flex-col justify-center h-full">
+      <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <p className="text-xl tracking-widest uppercase">Skills</p>
         <h2 className="Py-4">What I Can Do</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
