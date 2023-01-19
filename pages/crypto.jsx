@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import propertyImg from "../public/assets/projects/property.jpg";
+import propertyImg from "../public/assets/projects/crypto.jpg";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
-const property = () => {
+const crypto = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
@@ -76,4 +76,4 @@ const property = () => {
   );
 };
 
-export default property;
+export default crypto;

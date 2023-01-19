@@ -5,7 +5,6 @@ import crytpoImg from "../public/assets/projects/crypto.jpg";
 import nextflixImg from "../public/assets/projects/netflix.jpg";
 import twicthImg from "../public/assets/projects/twitch.jpg";
 
-
 export const Projects = () => {
   return (
     <div id="projects" className="w-full">
@@ -23,7 +22,7 @@ export const Projects = () => {
           <ProjectItems
             title="PCrpto App"
             backgroundImg={crytpoImg}
-            projectUrl="/property"
+            projectUrl="/crypto"
           />
           <ProjectItems
             title="NetFlix"
