@@ -17,8 +17,8 @@ const crypto = () => {
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Property Findex</h2>
-          <h3>React JS / Tailwind / Firebase</h3>
+          <h2 className="py-2">Social media website</h2>
+          <h3>React JS / @mui / Node.js / MongoDB</h3>
         </div>
       </div>
 
@@ -27,15 +27,41 @@ const crypto = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. At nam
-            magnam, sint eum dolore alias et, ut consequatur, quo natus soluta
-            tenetur. Ratione atque perferendis distinctio nam suscipit ab eius
-            voluptates ex dolor consequatur, eveniet assumenda. Ullam tenetur
-            libero, maxime quisquam autem, explicabo reiciendis, sunt nulla
-            voluptatem sequi laudantium doloremque?
+            This is a Mini MERN stack social media website built using MongoDB,
+            Express.js, React.js, and Node.js. The aim of the project is to
+            provide users with a platform to connect, share and interact with
+            each other. The website allows users to create an account, post
+            updates, like on other users' posts, and send friend request.
           </p>
-          <button className="px-8 py-2 mt-4 mr-8 ">Demo</button>
-          <button className="px-8 py-2 mt-4">Code</button>
+          <h5 className="mt-2">Features</h5>
+          <p>
+            1. User Authentication: The website implements secure user
+            authentication and authorization, allowing users to create an
+            account, log in, and access their profile and posts.
+          </p>
+          <p>
+            2. Post Management: Users can create, edit and delete their own
+            posts, as well as like on other users' posts.
+          </p>
+          <p>
+            3. Real-time Updates: The website implements real-time updates,
+            allowing users to see new posts, comments in real-time without
+            having to refresh the page.
+          </p>
+          <p>
+            The website is designed to be scalable, secure, and easy to use,
+            making it a great platform for users to connect and interact with
+            each other.
+            <span className="text-gray-500">
+              {" "}
+              This project is currently under construction and is being actively
+              developed to bring it to completion
+            </span>
+          </p>
+          <Link href="https://github.com/ShanifKn/Social_Media">
+            <button className="px-8 py-2 mt-4 mr-8 ">Demo</button>
+            <button className="px-8 py-2 mt-4">Code</button>
+          </Link>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
           <div className="p-2">
@@ -47,23 +73,23 @@ const crypto = () => {
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Tailwind
+                @mui
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Js
+                Node.js
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Next
+                Express
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                React
+                MongoDB
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                React
+                JWT
               </p>
             </div>
           </div>

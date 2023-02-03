@@ -15,7 +15,7 @@ export const Projects = () => {
         <h2 className="py-4">Whats I've Built</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItems
-            title="Property Finder"
+            title="E-Commerce Web Application"
             backgroundImg={propertyimg}
             projectUrl="/property"
           />
