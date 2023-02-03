@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import logo from "../public/assets/sh.png";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
@@ -48,12 +49,7 @@ export const Navbar = () => {
       }>
       <div className="flex justify-between items-center w-full px-2 2xl:px-16">
         <Link href="/">
-          <Image
-            src="/../public/assets/sh.png"
-            alt="/"
-            width="80"
-            height="50"
-          />
+          <Image src={logo} alt="/" width="80" height="50" />
         </Link>
         <div>
           <ul style={{ color: `${LinkColor}` }} className="hidden md:flex">
@@ -97,12 +93,7 @@ export const Navbar = () => {
           <div>
             <div className="flex w-full items-center justify-between">
               <Link href="/">
-                <Image
-                  src="/../public/assets/sh.png"
-                  alt="/"
-                  height="25"
-                  width="60"
-                />
+                <Image src={logo} alt="/" height="25" width="60" />
               </Link>
 
               <div
