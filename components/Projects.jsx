@@ -2,8 +2,10 @@ import React from "react";
 import { ProjectItems } from "./ProjectItems";
 import propertyimg from "../public/assets/projects/property.jpg";
 import crytpoImg from "../public/assets/projects/crypto.jpg";
-import nextflixImg from "../public/assets/projects/netflix.jpg";
-import twicthImg from "../public/assets/projects/twitch.jpg";
+import amazonImg from "../public/assets/projects/amazon.png";
+import disneyImg from "../public/assets/projects/disney.png";
+import movieImg from "../public/assets/projects/movie.png";
+import taksi from "../public/assets/projects/taksi.png";
 
 export const Projects = () => {
   return (
@@ -20,19 +22,29 @@ export const Projects = () => {
             projectUrl="/property"
           />
           <ProjectItems
-            title="PCrpto App"
+            title="Tak-si (ride-hailing platform)"
+            backgroundImg={taksi}
+            projectUrl="/taksi"
+          />
+          <ProjectItems
+            title="Social media website"
             backgroundImg={crytpoImg}
             projectUrl="/crypto"
           />
           <ProjectItems
-            title="NetFlix"
-            backgroundImg={nextflixImg}
-            projectUrl="/property"
+            title="Amazone Clone"
+            backgroundImg={amazonImg}
+            projectUrl="/amazon"
           />
           <ProjectItems
-            title="Twitch"
-            backgroundImg={twicthImg}
-            projectUrl="/property"
+            title="Movie Club"
+            backgroundImg={movieImg}
+            projectUrl="/Movie"
+          />
+          <ProjectItems
+            title="Disney Clone"
+            backgroundImg={disneyImg}
+            projectUrl="/Disney"
           />
         </div>
       </div>
